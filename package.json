@@ -1,0 +1,17 @@
+{
+  "name": "job",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:frontend1": "npm run dev --prefix company-portal",
+    "start:frontend2": "npm run dev --prefix job-portal",
+    "start:backend": "npm run dev --prefix backend",
+    "dev": "concurrently \"npm run start:frontend1\" \"npm run start:frontend2\" \"npm run start:backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "sweetalert2": "^11.23.0"
+  }
+}
